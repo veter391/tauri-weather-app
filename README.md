@@ -8,10 +8,7 @@ Thanks to Rust for optimized computations and React for creating a flexible user
 
 ## Demo
 ![alt text](Screenshot_5.jpg)
-<a href="https://github.com/veter391/tauri-weather-app/blob/main/weather-app.exe" download>
-Download App
-</a>
-### [Download App](weather-app.exe)
+### [Download App](https://github.com/veter391/tauri-weather-app/raw/main/weather-app.exe)
 
 ## How can you change and modify this project to suit yourself?
 
