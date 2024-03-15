@@ -1,0 +1,113 @@
+// .moon-ball {
+//     position: absolute;
+//     top: 0;
+//     left: -175px;
+//     margin: 50px 50%;
+//     border-radius: 50%;
+//     width: 350px;
+//     height: 350px;
+//     background-color: orange;
+//     box-shadow: 0 0 150px 10px yellow, 0 0 100px 20px yellow inset;
+//     z-index: 0;
+//     transform: translateX(100%) translateY(-200%);
+//     transition: transform 1.7s ease-out;
+// }
+
+.moon-ball {
+    background: whitesmoke;
+    width: 420px;
+    height: 420px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: inset -11px -8px 0px 4px rgb(0, 0, 0, 0.05),
+        0px 0px 10px 0px rgb(250, 250, 250),
+        0px 0px 50px 0px rgb(250, 250, 250),
+        0px 0px 500px 0px rgb(250, 250, 250);
+    margin:0;
+
+
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 0;
+    transform: translateX(-100%) translateY(-200%);
+    transition-property: transform, top, left;
+    transition-timing-function: ease-out;
+    transition-duration: 1.7s;
+    // transition: transform 1.7s ease-out;
+}
+
+.moon-ball .dark {
+    content: "";
+    background: rgb(0, 0, 0, 0.25);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    left: 110px;
+    border-radius: 100%;
+}
+
+.moon-ball .dark:nth-child(1) {
+    content: "";
+    background: rgb(0, 0, 0, 0.25);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    left: 70px;
+    border-radius: 100%;
+}
+
+.moon-ball .dark:nth-child(1)::after {
+    content: "";
+    background: rgb(250, 250, 250, 0.6);
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    bottom: 0px;
+    left: 7px;
+    border-radius: 100%;
+}
+
+.moon-ball .dark::after {
+    content: "";
+    background: rgb(250, 250, 250, 0.6);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 7px;
+    border-radius: 100%;
+}
+
+.moon-ball .dark:nth-child(2) {
+    content: "";
+    background: rgb(0, 0, 0, 0.35);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 120px;
+    left: 40px;
+    border-radius: 100%;
+}
+
+.moon-ball .dark:nth-child(2)::after {
+    content: "";
+    background: rgb(250, 250, 250, 0.6);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 4px;
+    border-radius: 100%;
+}
+
+@media (min-width: 800px) {
+    .moon-ball {
+        top: 9%;
+        left: 7%;
+    }
+}

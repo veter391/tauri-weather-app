@@ -1,0 +1,96 @@
+// Clouds
+
+$cloud: #a9a7f2;
+// $cloud: #c1c0e1;
+
+.cloud1,
+.cloud2 {
+    z-index: 3;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $cloud;
+
+    &::before {
+        position: absolute;
+        top: -30px;
+        left: 40px;
+        content: '';
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: $cloud;
+    }
+
+    &::after {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        content: '';
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: $cloud;
+    }
+
+    span {
+        position: absolute;
+        top: 25px;
+        left: 70px;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $cloud;
+    }
+}
+
+.cloud1 {
+    top: 60%;
+    left: 3%;
+    transform: scale(1.7);
+    opacity: 1;
+    animation: float 3s linear infinite alternate;
+}
+
+.cloud2 {
+    z-index: 1;
+    top: 58%;
+    right: auto;
+    left: 10%;
+    opacity: .4;
+    animation: float2 3s linear infinite alternate;
+}
+
+.cloud1-1 {
+    top: 45%;
+    left: auto;
+    right: 15%;
+}
+
+.cloud1-2 {
+    top: 41%;
+    left: auto;
+    right: 10%;
+}
+
+@keyframes float {
+    from {
+        transform: scale(1.7) translateY(0);
+    }
+
+    to {
+        transform: scale(1.7) translateY(10px);
+    }
+}
+
+@keyframes float2 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}

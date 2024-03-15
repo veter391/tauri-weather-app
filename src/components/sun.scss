@@ -1,0 +1,22 @@
+.sun-ball {
+    position: absolute;
+    top: -150px;
+    left: calc(50% - 250px);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    box-shadow: 0 0 250px 10px yellow, 0 0 200px 20px yellow inset;
+    z-index: 0;
+    transform: translateX(100%) translateY(-200%);
+    transition: transform 1.85s ease-out;
+}
+
+@media (min-width: 800px) {
+    .sun-ball {
+        width: 650px;
+        height: 650px;
+        left: calc(50% - 325px);
+        top: -200px;
+    }
+}
